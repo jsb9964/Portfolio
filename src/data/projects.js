@@ -30,7 +30,7 @@ const projects = [
         titre: 'Préparer l’environnement Blogger',
         description: 'Procédure de préparation de l’environnement de développement.',
         nomFichier: 'procedure-environnement-blogger.pdf',
-        url: import.meta.env.BASE_URL +'projets/blogger-responsive/Procedures/procedure-import.meta.env.BASE_URL +evironnement-dev-blogger.pdf'
+        url: import.meta.env.BASE_URL +'projets/blogger-responsive/Procedures/procedure-evironnement-dev-blogger.pdf'
       },
       {
         titre: 'Tester l’affichage responsive',
@@ -74,11 +74,25 @@ const projects = [
       },
       {
         titre: 'Ce que j’ai réalisé',
-        texte: "À venir..."
+        texte: "J'ai créer mon Portfolio à l'aide du framework Vue.js, puis je l'ai publié sur GitHub Pages."
+      }
+    ],
+    documents: [
+      {
+        titre: "Procédure d'initialisation de Vue.js.",
+        description: "Voici comment j'ai initialisé Vue.js et le module de routage pour travailler sur mon portfolio.",
+        nomFichier: 'PROCEDURE-INITIALISER-VUE-ROUTER-mise-au-propre.pdf',
+        url: import.meta.env.BASE_URL +'projets/portfolio/PROCEDURE-INITIALISER-VUE-ROUTER-mise-au-propre.pdf'
+      },
+      {
+        titre: "Procédure de mise en ligne via GitHub Pages.",
+        description: "Voici comment j'ai mis en ligne mon protfolio via l'outil GitHub Pages.",
+        nomFichier: 'procedure-mise-en-ligne-github-pages.pdf',
+        url: import.meta.env.BASE_URL +'projets/portfolio/procedure-mise-en-ligne-github-pages.pdf'
       }
     ],
     telechargement: '',
-    lienGithub: 'https://github.com/jsb9964?tab=repositories'
+    lienGithub: 'https://github.com/jsb9964/Portfolio'
   },
   {
     slug: 'pokeprojet',
