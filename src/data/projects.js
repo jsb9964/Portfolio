@@ -6,7 +6,7 @@ const projects = [
     titre: 'Adapter un site à tous les écrans.',
     description: "Modernisation responsive d’un thème Blogger pour LCBO Athlétisme.",
     technologies: ['Blogger', 'Responsive'],
-    image: '/images/apercu-lcboathle.png',
+    image: import.meta.env.BASE_URL +'images/apercu-lcboathle.png',
     alt: 'Aperçu du site LCBO Athlétisme',
     sections: [
       {
@@ -24,40 +24,40 @@ const projects = [
         titre: 'Compte rendu final du site',
         description: 'Compte rendu des missions effectuées sur les 5 semaines.',
         nomFichier: 'recapitulatif-stage-juillet2026.pdf',
-        url: '/projets/blogger-responsive/recapitulatif-stage-juillet2026.pdf'
+        url: import.meta.env.BASE_URL +'projets/blogger-responsive/recapitulatif-stage-juillet2026.pdf'
       },
       {
         titre: 'Préparer l’environnement Blogger',
         description: 'Procédure de préparation de l’environnement de développement.',
         nomFichier: 'procedure-environnement-blogger.pdf',
-        url: '/projets/blogger-responsive/Procedures/procedure-environnement-dev-blogger.pdf'
+        url: import.meta.env.BASE_URL +'projets/blogger-responsive/Procedures/procedure-import.meta.env.BASE_URL +evironnement-dev-blogger.pdf'
       },
       {
         titre: 'Tester l’affichage responsive',
         description: 'Procédure pour vérifier l’affichage sur différents écrans.',
         nomFichier: 'procedure-test-responsive.pdf',
-        url: '/projets/blogger-responsive/Procedures/procedure-test-responsive.pdf'
+        url: import.meta.env.BASE_URL +'projets/blogger-responsive/Procedures/procedure-test-responsive.pdf'
       },
       {
         titre: 'Rapport — adaptations mobile',
         description: 'Modifications réalisées pour les écrans mobiles.',
         nomFichier: 'rapport-changements-responsive-mobile.pdf',
-        url: '/projets/blogger-responsive/Bilans/rapport-changements-responsive-mobile.pdf'
+        url: import.meta.env.BASE_URL +'projets/blogger-responsive/Bilans/rapport-changements-responsive-mobile.pdf'
       },
       {
         titre: 'Rapport — adaptations tablette',
         description: 'Modifications réalisées pour les écrans tablette.',
         nomFichier: 'rapport-changements-responsive-tablette.pdf',
-        url: '/projets/blogger-responsive/Bilans/rapport-changements-responsive-tablette.pdf'
+        url: import.meta.env.BASE_URL +'projets/blogger-responsive/Bilans/rapport-changements-responsive-tablette.pdf'
       },
       {
         titre: 'Rapport SEO',
         description: 'Constats et pistes d’amélioration du référencement.',
         nomFichier: 'rapport-seo-blogger.pdf',
-        url: '/projets/blogger-responsive/Bilans/rapport-seo-blogger.pdf'
+        url: import.meta.env.BASE_URL +'projets/blogger-responsive/Bilans/rapport-seo-blogger.pdf'
       }
     ],
-    telechargement: '/projets/blogger-responsive.zip'
+    telechargement: import.meta.env.BASE_URL +'projets/blogger-responsive.zip'
   },
   {
     slug: 'portfolio',
@@ -65,7 +65,7 @@ const projects = [
     titre: 'Portfolio.',
     description: "Création de mon portfolio personnel.",
     technologies: ['Vue.js','Front-end','JavaScript'],
-    image: '/images/apercu-portfolio.png',
+    image: import.meta.env.BASE_URL +'images/apercu-portfolio.png',
     alt: 'Aperçu du portfolio',
     sections: [
       {
@@ -86,7 +86,7 @@ const projects = [
     titre: 'Pokeprojet: Un mini jeu pokémon.',
     description: "Création d'un jeu de combat pokémon.",
     technologies: ['PHP', 'Back-end','Front-end'],
-    image: '/images/apercu-pokeprojet.png',
+    image: import.meta.env.BASE_URL +'images/apercu-pokeprojet.png',
     alt: 'Aperçu du pokeprojet',
     sections: [
       {
