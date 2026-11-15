@@ -1,0 +1,115 @@
+main{
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+
+    .me-contacter{
+
+        h1 {
+            margin: 2rem 0 20px;
+            color: var(--text-titre);
+            font-size: 76px;
+            line-height: 1.05;
+        }
+
+        .phrase-principale {
+            margin: 0;
+            color: var(--text);
+            font-family: var(--police);
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    }
+
+    .liens{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .lien{
+            display: flex;
+            gap: 1rem;
+
+            .logo{
+                width: 80px;
+            }
+
+            .lien-complet{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                
+                .lien-titre{
+                    flex: 1;
+                    margin: 0 0 10px;
+                    color: var(--sable);
+                    font-family: var(--police);
+                    font-size: 11px;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                }
+
+                .lien-adresse{
+                    flex: 1;
+                    color: var(--text);
+                    font-family: var(--police);
+                    font-size: 15px;
+                    line-height: 1.5;
+                    text-decoration: none;
+                    overflow-wrap: anywhere;
+
+                    &:hover{
+                        color: var(--text-hover);
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+
+
+    main{
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        .me-contacter{
+            h1{
+                font-size: 56px;
+            }
+        }
+
+        .liens {
+            flex-direction: column;
+            gap: 3rem;
+            width: 100%;
+            max-width: 38rem;
+            margin: auto;
+
+            .lien {
+                display: grid;
+                grid-template-columns: 80px 1fr;
+                align-items: center;
+                width: fit-content;
+
+                .lien-complet{
+                    width: 120px;
+
+                    .lien-titre, .lien-adresse{
+                        width: 100%;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}

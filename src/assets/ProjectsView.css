@@ -1,0 +1,163 @@
+main {
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+
+  .intro-projets {
+    h1 {
+      margin-bottom: 20px;
+      color: var(--text-titre);
+      font-size: 76px;
+    }
+
+    .phrase-principale {
+      color: var(--text);
+      font-family: var(--police);
+      font-size: 18px;
+    }
+  }
+
+  .liste-projets {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+
+    .lien-projet {
+      display: block;
+      text-decoration: none;
+
+      .projet {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        border: 1px solid #59615D;
+        border-radius: 10px;
+        background-color: var(--bg-page);
+        text-align: center;
+
+        .apercu-projet {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .numero-projet {
+            display: block;
+            margin-bottom: 2rem;
+            color: #747B76;
+            font-family: Georgia, serif;
+            font-size: 64px;
+        }
+
+        .contenu-projet {
+          flex: 1;
+          padding: 2rem;
+
+          .categorie-projet {
+            color: var(--sable);
+            font-family: var(--police);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+          }
+
+          .titre-projet {
+            color: var(--text);
+            font-family: Georgia, serif;
+            font-size: 38px;
+            font-weight: 400;
+          }
+
+          .descr-projet {
+            color: var(--text);
+            font-family: var(--police);
+            font-size: 15px;
+            line-height: 1.6;
+          }
+
+          .kp-projet {
+            color: var(--text);
+            font-family: var(--police);
+            font-size: 13px;
+          }
+
+          .decouvrir-projet {
+            display: inline-block;
+            margin-top: 2rem;
+            padding-bottom: 5px;
+            border-bottom: 1px solid var(--sable);
+            color: var(--sable);
+            font-family: var(--police);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      &:hover {
+        .projet {
+          background-color: var(--bg-hover);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    .intro-projets h1 {
+      font-size: 56px;
+    }
+
+    .liste-projets {
+      .lien-projet {
+        .projet {
+
+          .contenu-projet {
+            padding: 1.5rem;
+
+            .titre-projet {
+              font-size: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+
+    .intro-projets h1 {
+      font-size: 44px;
+    }
+
+    .liste-projets {
+      .lien-projet {
+        .projet {
+          .apercu-projet {
+            height: 220px;
+          }
+
+          .contenu-projet {
+            padding: 1.25rem;
+
+            .titre-projet {
+              font-size: 28px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

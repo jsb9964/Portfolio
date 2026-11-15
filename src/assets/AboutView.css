@@ -1,0 +1,271 @@
+main{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: transparent;
+
+
+}
+
+.introduction {
+
+  h1 {
+    color: var(--text-titre);
+    font-size: 64px;
+  }
+
+  .phrase-principale {
+    color: var(--text);
+    font-family: var(--police);
+    font-size: 19px;
+    font-weight: 500;
+  }
+
+  .phrase-secondaire {
+    max-width: 640px;
+    color: var(--text-secondaire);
+    font-family: var(--police);
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+}
+
+/* Espacement et alignement des trois sections */
+.formations,
+.experiences,
+.autre {
+  margin-top: 5rem;
+
+}
+
+/* Titres : même style sérif que celui de la maquette */
+.titre-cartes {
+  margin: 0 0 2.5rem;
+  color: var(--text);
+  font-family: Georgia, serif;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.cv-formations{
+  display: flex;
+  flex: 1;
+
+  .cv, .formations{
+    flex:1;
+  }
+}
+
+.cv{
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0 0 1rem;
+  padding-left: 3rem;
+  align-items: center;
+
+  .telecharger-cv{
+    display: inline-block;
+    margin: 2rem 3rem 0;
+    padding: 0.85rem 1.2rem;
+    border: 1px solid var(--sable);
+    background-color: var(--sable);
+    color: var(--bg-page);
+    font-family: var(--police);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 200ms ease, color 200ms ease;
+
+    &:hover{
+      background-color: var(--bg-page);
+      color: var(--sable);
+    }
+  }
+
+  .image-cv{
+    display: block;
+    width: 75%;
+    max-width: 420px;
+    height: auto;
+    margin: 2rem auto 0;
+    box-sizing: border-box;
+    border: 12px solid var(--sable);
+    box-shadow: 0 12px 26px rgb(0 0 0 / 20%);
+  }
+}
+
+.all-formations {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+  margin: 2.5rem 0 0 1rem;
+  padding-left: 3rem;
+
+  /* Chaque étape de la frise */
+  .formation {
+    position: relative;
+
+    .titre-formation {
+      font-size: 23px;
+      text-transform: uppercase;
+    }
+
+    .descr-formation {
+      max-width: 640px;
+      margin: 0;
+      color: var(--text-secondaire);
+      font-family: var(--police);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* Le point placé sur la ligne */
+    &::before{
+      content: "";
+      position: absolute;
+      top: 0.2rem;
+      left: -3rem;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: var(--sable);
+    }
+  }
+
+  /* La ligne verticale de la frise */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.4rem;
+    bottom: 0.4rem;
+    left: 6px;
+    width: 2px;
+    background-color: rgb(243 240 232 / 35%);
+  }
+}
+/* Style commun aux titres des formations et des expériences. */
+.titre-formation,
+.titre-experience {
+    margin: 0 0 0.8rem;
+    color: var(--text);
+    font-family: var(--police);
+    font-weight: 700;
+}
+/* Style commun aux dates du parcours et des expériences. */
+.date-formation,
+.date-experience {
+  margin: 0 0 0.8rem;
+  color: var(--sable);
+  font-family: var(--police);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Disposition commune aux listes d'expériences et de loisirs. */
+.all-experiences,
+.all-loisirs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 3rem;
+  border-top: 1px solid rgb(243 240 232 / 18%);
+
+  /* Espacement et séparation de chaque élément. */
+  .experience,
+  .loisir {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgb(243 240 232 / 18%);
+
+    /* Même apparence pour les descriptions des expériences et des loisirs. */
+    .descr-experience,
+    .descr-loisir {
+      margin: 0;
+      color: var(--text-secondaire) ;
+      font-family: var(--police);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+  }
+
+}
+
+/* Expériences : deux colonnes, séparées par de fines lignes */
+.all-experiences {
+
+  .experience {
+
+    .titre-experience {
+      font-size: 20px;
+    }
+
+    .descr-experience {
+      max-width: 520px;
+    }
+  }
+}
+
+/* Loisirs : présentation éditoriale, sans cartes */
+.all-loisirs {
+
+  .loisir {
+
+    .titre-loisir {
+      margin: 0 0 0.7rem;
+      color: var(--text);
+      font-family: Georgia, serif;
+      font-size: 26px;
+      font-weight: 400;
+    }
+
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .cv-formations{
+    flex-direction: column;
+
+    .cv, .formations{
+      flex: 0 0 auto;
+      width: 100%;
+    }
+
+    .cv{
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    .formations{
+      box-sizing: border-box;
+      margin: 3rem 0 0;
+      padding: 0;
+    }
+  }
+}
+
+/* Sur petit écran, les colonnes passent l'une sous l'autre */
+@media (max-width: 600px) {
+  main {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .titre-cartes {
+    font-size: 30px;
+  }
+
+  /* Les expériences et les loisirs passent sur une seule colonne. */
+  .all-experiences,
+  .all-loisirs {
+    grid-template-columns: 1fr;
+  }
+}

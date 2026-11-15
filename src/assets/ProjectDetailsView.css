@@ -1,0 +1,234 @@
+.detail-projet {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 4rem;
+    color: var(--text);
+
+  .retour-projets {
+    display: inline-block;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    color: var(--sable);
+    font-family: var(--police);
+    font-size: 19px;
+    text-decoration: none;
+  }
+
+  .intro-detail {
+    margin-bottom: 2rem;
+
+    .categorie-projet {
+      color: var(--sable);
+      font-family: var(--police);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 1rem 0;
+      color: var(--text);
+      font-size: 64px;
+    }
+
+    .description-projet {
+      max-width: 800px;
+      font-family: var(--police);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .technologies-projet {
+      color: var(--sable);
+      font-family: var(--police);
+      font-size: 14px;
+    }
+  }
+
+  .apercu-detail {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border: 1px solid rgb(243 240 232 / 15%);
+    border-radius: 10px;
+  }
+
+  .sections-detail {
+    margin-top: 4rem;
+
+    .section-projet {
+      padding: 2rem 0;
+      border-bottom: 1px solid rgb(243 240 232 / 15%);
+
+      h2 {
+        margin-top: 0;
+        color: var(--text);
+        font-family: Georgia, serif;
+        font-size: 36px;
+        font-weight: 400;
+      }
+
+      p {
+        max-width: 850px;
+        color: var(--text);
+        font-family: var(--police);
+        font-size: 17px;
+        line-height: 1.7;
+      }
+    }
+  }
+
+  .documents-projet {
+    margin-top: 4rem;
+
+    h2 {
+      margin-bottom: 1rem;
+      color: var(--text);
+      font-family: Georgia, serif;
+      font-size: 36px;
+      font-weight: 400;
+    }
+
+    .liste-documents {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .ligne-document {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid rgb(243 240 232 / 15%);
+
+      h3 {
+        margin: 0 0 0.5rem;
+        color: var(--text);
+        font-family: var(--police);
+        font-size: 18px;
+      }
+
+      p {
+        margin: 0;
+        color: var(--text-secondaire);
+        font-family: var(--police);
+        font-size: 15px;
+        line-height: 1.5;
+      }
+
+      a {
+        flex-shrink: 0;
+        padding-bottom: 6px;
+        border-bottom: 1px solid var(--sable);
+        color: var(--sable);
+        font-family: var(--police);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      a:hover {
+        color: var(--text-hover);
+      }
+    }
+  }
+
+  .conteneur-telechargement{
+    text-align: center;
+    .telecharger-projet {
+        display: inline-block;
+        margin-top: 3rem;
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--sable);
+        color: var(--sable);
+        font-family: var(--police);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+  }
+
+  .retour-projets:hover,
+  .telecharger-projet:hover {
+    color: var(--text);
+  }
+}
+
+.projet-introuvable {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 4rem;
+
+  h1 {
+    color: var(--text);
+    font-size: 48px;
+  }
+
+  .retour-projets{
+    display: inline-block;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    color: var(--sable);
+    font-family: var(--police);
+    font-size: 19px;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 900px) {
+    .detail-projet {
+        padding-right: 2rem;
+        padding-left: 2rem;
+
+        .intro-detail h1 {
+            font-size: 52px;
+        }
+
+        .apercu-detail {
+            height: 320px;
+        }
+
+        .documents-projet .ligne-document {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+    }
+
+    .projet-introuvable {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .detail-projet {
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+
+        .intro-detail h1 {
+            font-size: 40px;
+        }
+
+        .apercu-detail {
+            height: 220px;
+        }
+
+        .sections-detail .section-projet h2 {
+            font-size: 30px;
+        }
+    }
+
+    .projet-introuvable {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}

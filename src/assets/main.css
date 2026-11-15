@@ -1,0 +1,61 @@
+:root {
+    --bg-page: #202523; /* Fond extérieur sombre */
+    --bg-main: #3c4541; /* Fond principal, plus clair */
+    --text-titre: #F7F4EC; /* Titres principaux */
+    --text-secondaire: #E2DDCE; /* Textes secondaires */
+    --bg-hover: #2A302D; /* Fond légèrement éclairci au survol */
+    --text: #f3f0e8; /* Titres et texte */
+    --text-hover: #efe8d4; /* Liens au survol */
+    --sable: #E3DDCA;
+    --police: arial, sans-serif;
+}
+
+/* Le site occupe au minimum toute la hauteur de l'écran. */
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    /* Le contenu prend la place disponible et pousse le footer en bas. */
+    main {
+        flex: 1;
+        /* Même espace sous le header pour toutes les pages. */
+        padding-top: 80px;
+
+        h1 {
+            font-family: Georgia, serif;
+            font-weight: 400;
+        }
+    }
+}
+
+body{
+    background-color: var(--bg-main);
+    margin: 0;
+}
+
+/* Empêche la page de défiler derrière le menu mobile ouvert. */
+body.menu-ouvert{
+    overflow: hidden;
+}
+
+/* Apparence commune des petits titres : CONTACT, PROJETS, À PROPOS… */
+.eyebrow{
+    text-transform: uppercase;
+    color: var(--sable);
+    font-family: var(--police);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/* Ligne décorative commune pour séparer les parties d'une page. */
+.separation {
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    background-color: rgb(243 240 232 / 12%);
+}
+

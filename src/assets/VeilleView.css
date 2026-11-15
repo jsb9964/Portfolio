@@ -1,0 +1,247 @@
+main {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+
+  .intro-veille {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-bottom: 2rem;
+
+    .texte-intro {
+      max-width: 620px;
+
+
+      h1 {
+        margin: 2rem 0 1rem;
+        color: var(--text);
+        font-size: 52px;
+        line-height: 1.05;
+      }
+
+      .description-veille {
+        margin: 0;
+        color: var(--text);
+        font-family: var(--police);
+        font-size: 15px;
+        line-height: 1.6;
+      }
+    }
+
+    .outil-veille {
+      flex-shrink: 0;
+      padding-left: 1rem;
+      border-left: 1px solid var(--sable);
+      color: var(--sable);
+      font-family: var(--police);
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+      p {
+        margin: 0 0 0.5rem;
+        font-weight: 700;
+      }
+
+      span {
+        display: block;
+        margin-top: 0.3rem;
+      }
+    }
+  }
+
+  .lectures-veille {
+    display: flex;
+    gap: 1.25rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgb(243 240 232 / 24%);
+
+    .article-vedette {
+      display: flex;
+      flex: 1.2;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1.75rem;
+      background-color: var(--sable);
+      color: var(--bg-page);
+
+      .categorie-article {
+        margin: 0;
+        color: var(--bg-page);
+        font-family: var(--police);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        margin: 2rem 0 1rem;
+        font-family: Georgia, serif;
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 1.15;
+      }
+
+      .resume-article {
+        margin: 0;
+        font-family: var(--police);
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .lien-source {
+        color: var(--bg-page);
+      }
+    }
+
+    .articles-secondaires {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.25rem;
+
+      .article-secondaire {
+        padding: 0.5rem 0 1rem;
+
+        .categorie-article {
+          margin: 0;
+          color: var(--sable);
+          font-family: var(--police);
+          font-size: 11px;
+          font-weight: 700;
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+        }
+
+        h2 {
+          margin: 0.75rem 0;
+          color: var(--text);
+          font-family: Georgia, serif;
+          font-size: 25px;
+          font-weight: 400;
+        }
+
+        .resume-article {
+          margin: 0;
+          color: var(--text);
+          font-family: var(--police);
+          font-size: 13px;
+          line-height: 1.5;
+        }
+      }
+
+      .article-secondaire + .article-secondaire {
+        padding-top: 1.25rem;
+        border-top: 1px solid rgb(243 240 232 / 24%);
+      }
+    }
+  }
+
+  .lien-source {
+    display: inline-block;
+    margin-top: 1.25rem;
+    padding-bottom: 4px;
+    border-bottom: 1px solid currentColor;
+    color: var(--sable);
+    font-family: var(--police);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      color: var(--text-hover);
+    }
+  }
+
+  .sources-veille {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1.75rem;
+    padding: 1rem 1.25rem;
+    background-color: var(--bg-page);
+
+    .eyebrow {
+      margin: 0;
+      white-space: nowrap;
+    }
+
+    .liste-sources {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 0.75rem 1rem;
+
+      a {
+        color: var(--text);
+        font-family: var(--police);
+        font-size: 12px;
+        text-decoration: none;
+
+        &:hover {
+          color: var(--text-hover);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    padding-right: 2rem;
+    padding-left: 2rem;
+
+    .intro-veille {
+      align-items: flex-start;
+      flex-direction: column;
+
+      .outil-veille {
+        padding-left: 0;
+        border-left: 0;
+      }
+    }
+
+    .lectures-veille {
+      flex-direction: column;
+
+      .article-vedette {
+        min-height: 250px;
+      }
+    }
+
+    .sources-veille {
+      align-items: flex-start;
+      flex-direction: column;
+
+      .liste-sources {
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+
+    .intro-veille .texte-intro h1 {
+      font-size: 40px;
+    }
+
+    .lectures-veille .article-vedette {
+      padding: 1.25rem;
+
+      h2 {
+        font-size: 29px;
+      }
+    }
+  }
+}

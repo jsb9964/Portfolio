@@ -1,0 +1,154 @@
+.fond-presentation{
+    position: relative;
+    background-image: url('/images/mountain.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    min-height: calc(100vh - 180px);
+
+    .eyebrow{
+        padding-left: 3rem;
+    }
+
+    .presentation{
+        padding-left: 3rem;
+
+        h1{
+            color: var(--text-titre);
+            font-size: 120px;
+        }
+        .phrase-principale{
+            color: var(--text);
+            font-family: var(--police);
+            font-size: 23px;
+        }
+
+        .phrase-secondaire{
+            color: var(--text-secondaire);
+            font-family: var(--police);
+            font-size: 18px;
+        }
+
+
+    }
+
+    .defiler {
+        position: absolute;
+        right: 3rem;
+        bottom: 1.5rem;
+        color: var(--sable);
+        font-family: var(--police);
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        span{
+            margin-left: 0.5rem;
+            font-size: 20px;
+        }
+
+        &:hover{
+            color: var(--text-hover)
+        }
+    }
+}
+
+
+.to-projects{
+    margin-top: 30px;
+
+    a{
+        color: var(--sable);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: var(--police);
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.12rem;
+        padding-bottom: 0.4rem;
+        border-bottom: 1px solid var(--sable);
+    }
+}
+
+#projets{
+
+    .prez-projet {
+        height: 70vh;
+        background-color: var(--bg-page);
+        padding: 4rem;
+        transition: background-color 200ms ease;
+
+        &:hover{
+            background-color: var(--bg-hover);
+        }
+    }
+
+    .numero-projet {
+        display: block;
+        margin-bottom: 3rem;
+        color: rgb(243 240 232 / 22%);
+        font-family: Georgia, serif;
+        font-size: 9.5rem;
+        line-height: 0.8;
+    }
+
+    .descr-projet {
+        margin: 0 0 2.5rem;
+        color: var(--sable);
+        font-family: var(--police);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        }
+
+    .titre-projet {
+        margin: 0 0 1.5rem;
+        color: var(--text);
+        font-family: Georgia, serif;
+        font-size: 3.5rem;
+        font-weight: 400;
+        line-height: 1.08;
+    }
+
+    .detail-projet {
+        margin: 0;
+        color: rgb(243 240 232 / 75%);
+        font-family: var(--police);
+        font-size: 1.2rem;
+        letter-spacing: 0.04em;
+    }
+}
+
+@media (max-width: 900px) {
+    #projets {
+        .prez-projet {
+            padding: 3rem;
+        }
+
+        .numero-projet {
+            font-size: 7rem;
+        }
+
+        .titre-projet {
+            font-size: 2.75rem;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #projets {
+        .prez-projet {
+            padding: 2rem;
+        }
+
+        .numero-projet {
+            font-size: 5.5rem;
+        }
+
+        .titre-projet {
+            font-size: 2rem;
+        }
+    }
+}

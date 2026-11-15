@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="mountain" x1="390" y1="250" x2="1180" y2="730" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#899389"/>
+      <stop offset="1" stop-color="#63736A"/>
+    </linearGradient>
+    <linearGradient id="foothills" x1="800" y1="570" x2="800" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C2B991"/>
+      <stop offset="1" stop-color="#A8A47D"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="1240" cy="178" r="76" fill="#E1DCC5"/>
+
+  <path d="M0 735L445 330L695 555L1030 210L1600 755V900H0V735Z" fill="url(#mountain)"/>
+
+  <path d="M950 292L1030 210L1112 324L1053 301L1027 344L997 304L972 326L950 292Z" fill="#DDD8C2"/>
+
+  <path d="M0 760L300 600L560 720L825 610L1085 730L1320 620L1600 760V900H0V760Z" fill="url(#foothills)"/>
+</svg>

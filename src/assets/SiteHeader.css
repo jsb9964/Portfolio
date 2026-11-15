@@ -1,0 +1,102 @@
+#menu-bouton{
+    display: none;
+}
+
+.site-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-page);
+    height: 100px;
+    padding: 0 3rem;
+    box-sizing: border-box;
+    width: 100%;
+
+    .titre-header{
+        color: var(--text);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: var(--police);
+        font-size: 17px;
+        font-weight: 700;
+        letter-spacing: 2px;
+
+        &:hover{
+            color: var(--text-hover);
+        }
+    }
+
+    .navbar{
+        display: flex;
+        gap: 1rem;
+
+        a{
+            color: var(--text);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: var(--police);
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 1px;
+
+            &:hover{
+                color: var(--text-hover);
+            }
+        }
+    }
+}
+
+/* Tablette et petits écrans : menu burger */
+@media (max-width: 900px) {
+    #menu-bouton{
+        display:block;
+
+        .burger-line {
+            display: block;
+            width: 28px;
+            height: 2px;
+            margin: 5px 0;
+            border-radius: 2px;
+            background-color: var(--text);
+            transition: transform 200ms ease, opacity 200ms ease;
+        }
+    }
+    .site-header .navbar{
+        display: none;
+    }
+
+    .site-header .navbar.open {
+        position: fixed;
+        inset: 0;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bg-page);
+        
+        a{
+            font-size: 30px;
+            transition: background-color 200ms ease;
+
+            &:hover{
+                background-color: var(--bg-hover);
+            }
+        }
+    }
+
+    #menu-bouton.close{
+        display:block;
+        z-index: 11;
+        
+        .burger-line:nth-child(1){
+            transform: translateY(7px) rotate(45deg);
+        }
+        .burger-line:nth-child(2){
+            opacity: 0;
+        }
+        .burger-line:nth-child(3){
+            transform: translateY(-7px) rotate(-45deg);
+        }
+    }
+}
