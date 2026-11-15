@@ -82,13 +82,19 @@ const projects = [
         titre: "Procédure d'initialisation de Vue.js.",
         description: "Voici comment j'ai initialisé Vue.js et le module de routage pour travailler sur mon portfolio.",
         nomFichier: 'PROCEDURE-INITIALISER-VUE-ROUTER-mise-au-propre.pdf',
-        url: import.meta.env.BASE_URL +'projets/portfolio/PROCEDURE-INITIALISER-VUE-ROUTER-mise-au-propre.pdf'
+        url: import.meta.env.BASE_URL +'projets/portfolio/procedures/PROCEDURE-INITIALISER-VUE-ROUTER-mise-au-propre.pdf'
       },
       {
         titre: "Procédure de mise en ligne via GitHub Pages.",
         description: "Voici comment j'ai mis en ligne mon protfolio via l'outil GitHub Pages.",
         nomFichier: 'procedure-mise-en-ligne-github-pages.pdf',
-        url: import.meta.env.BASE_URL +'projets/portfolio/procedure-mise-en-ligne-github-pages.pdf'
+        url: import.meta.env.BASE_URL +'projets/portfolio/procedures/procedure-mise-en-ligne-github-pages.pdf'
+      },
+      {
+        titre: "Schéma de la structure de mon portfolio",
+        description: "C'est un schéma sous forme de diagramme qui représente la structure de mon portfolio. Elle référence l'arboresence des pages de celui-ci",
+        nomFichier: 'portfolio-sitemap-diagram.png',
+        url: import.meta.env.BASE_URL +'projets/portfolio/images/portfolio-sitemap-diagram.png'
       }
     ],
     telechargement: '',
