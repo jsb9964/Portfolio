@@ -92,9 +92,15 @@ const projects = [
       },
       {
         titre: "Schéma de la structure de mon portfolio",
-        description: "C'est un schéma sous forme de diagramme qui représente la structure de mon portfolio. Elle référence l'arboresence des pages de celui-ci",
+        description: "C'est un schéma sous forme de diagramme qui représente la structure de mon portfolio. Elle référence l'arboresence des pages de celui-ci.",
         nomFichier: 'portfolio-sitemap-diagram.png',
         url: import.meta.env.BASE_URL +'projets/portfolio/images/portfolio-sitemap-diagram.png'
+      },
+      {
+        titre: "Compte rendu de la réalisation de mon portfolio",
+        description: "Petit compte rendu qui explique la réalisation du portfolio.",
+        nomFichier: 'Compte-rendu-portfolio-JaniSB.docx',
+        url: import.meta.env.BASE_URL +'projets/portfolio/compte-rendus/Compte-rendu-portfolio-JaniSB.docx'
       }
     ],
     telechargement: '',
