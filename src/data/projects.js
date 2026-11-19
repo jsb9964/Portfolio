@@ -55,6 +55,12 @@ const projects = [
         description: 'Constats et pistes d’amélioration du référencement.',
         nomFichier: 'rapport-seo-blogger.pdf',
         url: import.meta.env.BASE_URL +'projets/blogger-responsive/Bilans/rapport-seo-blogger.pdf'
+      },
+      {
+        titre: 'Diagramme de Gantt du déroulé du stage',
+        description: 'Ce diagramme de Gantt retrace toutes les tâches et sous-tâches réalisées durant ma période de stage.',
+        nomFichier: 'Gantt-stage-CYBERANDCO-Jani-SB.pdf',
+        url: import.meta.env.BASE_URL +'projets/blogger-responsive/Bilans/Gantt-stage-CYBERANDCO-Jani-SB.pdf'
       }
     ],
     telechargement: import.meta.env.BASE_URL +'projets/blogger-responsive.zip'

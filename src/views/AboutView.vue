@@ -1,4 +1,6 @@
-
+<script setup>
+  const baseUrl = import.meta.env.BASE_URL
+</script>
 
 <style scoped src="../assets/AboutView.css"></style>
 <template>
@@ -13,7 +15,8 @@
     <section class="cv-formations">
       <section class="cv">
         <img src="/images/cv-stage26-JaniSB.jpg" alt="CV de Jani" class="image-cv">
-        <a href="/pdf/cv-stage26-JaniSB.pdf" class="telecharger-cv" download>Télécharger mon CV.</a>
+        <a :href="baseUrl + 'pdf/cv-stage26-JaniSB.pdf'" class="telecharger-cv" download>Télécharger mon CV.</a>
+        <a :href="baseUrl + 'pdf/grille-U5.pdf'" class="telecharger-cv" target="_blank" rel="noreferrer">Consulter mon tableau de synthèse U5</a>
       </section>
       <section class="formations">
         <p class="eyebrow">MON PARCOURS</p>
